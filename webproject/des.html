@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .inline { 
+              display: inline; 
+              
+              margin:10px;
+              }
+         .r1
+         {
+          margin: 20px 400px 10px 90px;
+          width: 50%
+         }
+         a{
+        text-decoration: none;
+
+           }
+         p{
+        font-size: 95%
+          }
+          h3 , h6{
+        display: inline;
+      }
+       h6{
+        font-family: Cursive;
+        font-size: 90%;
+       
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+         }
+       
+     </style>
+      
+    </head>
+    <body>
+        <div class="r1"> 
+
+          <p class="inline " style="font-weight: bold"><?php echo "Product Name:" ."   " ;?></p>
+          <p class="inline "><?php echo  $row['name'];?></p><br><br>
+          <p class="inline " style="font-weight: bold"><?php echo "Product Details:" ."   " ;?></p>
+          <p class="inline " class="r3"><?php echo $row['details'];?></p><br><br>
+          <p class="inline " style="font-weight: bold"><?php echo "for contact:" ."   " ;?></p>
+        
+         
+          <div><?php echo  "<img src='up/". $row['avatar'] ." ' alt=''  width='300' height='1000'/>"       ;?> </div>
+          
+ 
+       </div>
+         <hr>
+    </body>
+   
+</html>
+
+
+
+
+
